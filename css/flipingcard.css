@@ -1,0 +1,43 @@
+/*Fliping card
+	-This css document generates an fliping effect when it's applied to an element.
+
+*/
+/*Main container*/
+.card-container{
+	/*perspective:800px;*/
+	
+}
+/*The card to be flipped*/
+.card{
+	transform-style:preserve-3d;
+	transition: all 0.6s ease;
+	backface-visibility:hidden;
+}
+
+.front, .back{
+	backface-visibility:hidden;
+}
+
+/*Frontside of the card*/
+.front{
+
+}
+
+/*Backside of the card*/
+.back{
+	transform:rotateY(180deg);
+}
+
+/*This rule is crontrolled using javascript*/
+.rotate{
+	transform: rotateY(180deg);
+}
+.rotateback{
+	transform:rotateY(0deg);
+}
+
+
+
+
+
+
